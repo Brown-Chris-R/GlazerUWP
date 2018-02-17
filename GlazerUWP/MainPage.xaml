@@ -8,6 +8,27 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="57*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+        <Grid HorizontalAlignment="Left" Height="683" Margin="100,25,0,0" VerticalAlignment="Top" Width="450">
+            <Button x:Name="Calculate" Content="Calculate Materials Needed" HorizontalAlignment="Left" Margin="10,315,0,0" VerticalAlignment="Top" Width="420" Height="89" FontSize="24" Click="Calculate_Click"/>
+            <TextBox x:Name="WidthInput" HorizontalAlignment="Left" Margin="345,69,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="45" Width="85" FontSize="24" KeyDown="WidthInput_KeyDown"/>
+            <TextBox x:Name="HeightInput" HorizontalAlignment="Left" Margin="345,136,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="45" Width="85" FontSize="24" KeyDown="HeightInput_KeyDown"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,76,0,0" TextWrapping="Wrap" Text="Please enter the window width (0.5m - 5.0m):" VerticalAlignment="Top" RenderTransformOrigin="-0.187,-1.88" Height="32" Width="310"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,142,0,0" TextWrapping="Wrap" Text="Please enter the window height (0.75m - 3.0m):" VerticalAlignment="Top" RenderTransformOrigin="-0.187,-1.88" Height="32" Width="330"/>
+            <TextBlock x:Name="WoodNeeded" HorizontalAlignment="Left" Margin="133,479,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" RenderTransformOrigin="-0.884,-3.24" Height="54" Width="283" FontSize="20"/>
+            <TextBlock x:Name="GlassNeeded" HorizontalAlignment="Left" Margin="133,595,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" RenderTransformOrigin="-0.884,-3.24" Height="54" Width="283" FontSize="20"/>
+            <Image x:Name="WoodImage" HorizontalAlignment="Left" Height="100" Margin="0,456,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.156,-0.76"/>
+            <Image x:Name="GlassImage" HorizontalAlignment="Left" Height="100" Margin="0,578,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.156,-0.76"/>
+            <ComboBox x:Name="TintColor" HorizontalAlignment="Left" Margin="343,202,0,0" VerticalAlignment="Top" Width="87"/>
+            <TextBlock HorizontalAlignment="Left" Margin="8,202,0,0" TextWrapping="Wrap" Text="Please select a tint color:" VerticalAlignment="Top" RenderTransformOrigin="-0.187,-1.88" Height="32" Width="330"/>
+            <TextBlock x:Name="Title" HorizontalAlignment="Left" Margin="10,4,0,0" TextWrapping="Wrap" Text="Window Calculator" VerticalAlignment="Top" RenderTransformOrigin="-0.187,-1.88" Height="60" Width="406" FontSize="36" TextAlignment="Center"/>
+            <Slider x:Name="Quantity" HorizontalAlignment="Left" Margin="78,254,0,0" VerticalAlignment="Top" Width="352" Minimum="1"/>
+            <TextBlock HorizontalAlignment="Left" Margin="8,262,0,0" TextWrapping="Wrap" Text="Quantity:" VerticalAlignment="Top" RenderTransformOrigin="-0.187,-1.88" Height="32" Width="66"/>
+            <TextBlock x:Name="CalculationDate" HorizontalAlignment="Left" Margin="10,420,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" RenderTransformOrigin="-0.884,-3.24" Height="54" Width="420" FontSize="20"/>
+        </Grid>
 
     </Grid>
 </Page>
